@@ -86,7 +86,7 @@ const HomePage = () => {
 
       <div className="overflow-x-hidden overflow-y-auto scrollbar-none md:scrollbar-thin scrollbar-thumb-gray-300 dark:scrollbar-thumb-[#202123] scrollbar-thumb-rounded-lg">
         <h1 className="text-5xl text-center font-semibold mb-9 md:mb-20 mt-9 md:mt-0">
-          Alex&apos;s ChatGPT
+          Alex&apos;s Chatbot
         </h1>
 
         <div className="flex flex-col md:flex-row md:items-start md:space-x-5 items-center text-center">
@@ -97,13 +97,12 @@ const HomePage = () => {
             </div>
 
             <div className="space-y-5">
-              <p className="infoText">&quot;Who is Satoshi Nakamoto?&quot;</p>
+              <p className="infoText">&quot;How to get a job as a software developer&quot;</p>
               <p className="infoText">
-                &quot;Explain the significance of NFTs in the digital
-                world&quot;
+              &quot;Can you explain what an anode is?&quot;
               </p>
               <p className="infoText">
-                &quot;What is the difference between DeFi and CeFi?&quot;
+                &quot;Is this statement false?&quot;
               </p>
             </div>
           </div>

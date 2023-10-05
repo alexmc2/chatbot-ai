@@ -36,3 +36,7 @@ serviceAccountKey.json
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# firebase
+serviceAccountKey.json
+```

@@ -8,11 +8,11 @@
   }
 
   .chatRow {
-    @apply flex items-center justify-start space-x-2 rounded-lg text-sm text-gray-300 cursor-pointer hover:bg-gray-700/70 transition-all duration-300 ease-out;
+    @apply flex items-center justify-start space-x-2 rounded-lg text-sm text-gray-100 cursor-pointer hover:bg-gray-700/70 transition-all duration-300 ease-out;
   }
 
   .adminRow {
-    @apply flex items-center justify-start space-x-2 rounded-lg text-sm text-gray-300 cursor-pointer hover:bg-gray-700/70 transition-all duration-300 ease-out px-3 py-3;
+    @apply flex items-center justify-start space-x-2 rounded-lg text-sm text-gray-100 cursor-pointer hover:bg-gray-700/70 transition-all duration-300 ease-out px-3 py-3;
   }
 }
 

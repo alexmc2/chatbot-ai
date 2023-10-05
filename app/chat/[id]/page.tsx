@@ -1,8 +1,9 @@
 'use client';
 
 import { db } from '@/firebase/firebase';
-console.log(db);
+
 import { useSession } from 'next-auth/react';
+
 import { useCollection } from 'react-firebase-hooks/firestore';
 
 import {
