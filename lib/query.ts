@@ -1,5 +1,5 @@
-import { instructions } from "@/app/helpers/constants/system-prompt";
-import openai from "./configuration";
+import { instructions } from '@/app/helpers/constants/system-prompt';
+import openai from './configuration';
 
 export async function query(
   outboundMessages: GPTMessage[],
@@ -7,12 +7,12 @@ export async function query(
   model: string
 ) {
   outboundMessages.unshift({
-    role: "system",
+    role: 'system',
     content: instructions,
   });
 
-  const response = await openai
-    .createChatCompletion({
+  const response = await openai.chat.completions
+    .create({
       model,
       user: id,
       messages: outboundMessages,
@@ -24,7 +24,7 @@ export async function query(
       stream: false,
       n: 1,
     })
-    .then((res) => res.data.choices[0].message?.content)
+    .then((res) => res.choices[0].message?.content)
     .catch((err) => `Please try again! (Error: ${err.message})`);
 
   return response;

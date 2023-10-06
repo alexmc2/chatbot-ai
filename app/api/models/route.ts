@@ -1,7 +1,7 @@
-import openai from "@/lib/configuration";
+import openai from '@/lib/configuration';
 
 export async function GET() {
-  const models = await openai.listModels().then((res) => res.data.data);
+  const models = await openai.models.list().then((res) => res.data);
 
   const modelOptions = models.map((model) => ({
     value: model.id,
